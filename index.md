@@ -1,15 +1,12 @@
 ---
 layout: single
-#classes: wide
-#title: Can AI Create a White Painting?
-#masthead_title: Can AI Create a White Painting?
 author: Cody Z. Nash
 
 header:
   image: images/white.jpg
   caption: white.jpeg by c.z.nash
 
-description: Can AI Create a White Painting?
+#description: Can AI Create a White Painting?
 show-downloads: False
 
 toc: true
