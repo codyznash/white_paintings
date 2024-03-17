@@ -9,11 +9,11 @@ header:
 description: Can AI Create a White Painting?
 show-downloads: False
 
+title: Can AI Create a White Painting?
+
 toc: true
 toc_label: "Table of Contents"
 ---
-
-# Can AI Create a White Painting?
 
 <figure>
   <img src="images/White Painting.png" alt="White Painting [three panel]" style="width: 50%;">
