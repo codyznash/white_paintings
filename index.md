@@ -277,5 +277,5 @@ For all ten images of the ox-herder's parable, with translated text and history,
 <br><br>
 
 Site Repo: [codyznash/white_paintings](https://github.com/codyznash/white_paintings)  
-Colab for Prompt Development: [Notebook](https://colab.research.google.com/drive/1IQrgTQSrPd99k_zOMkrX1MZeZKkhBa7g)
+Colab for Prompt Development: [Notebook](https://colab.research.google.com/drive/1IQrgTQSrPd99k_zOMkrX1MZeZKkhBa7g)  
 March 17th, 2024
