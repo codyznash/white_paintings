@@ -13,6 +13,8 @@ toc: true
 toc_label: "Table of Contents"
 ---
 
+# Can AI Create a White Painting?
+
 <figure>
   <img src="images/White Painting.png" alt="White Painting [three panel]" style="width: 50%;">
   <figcaption>White Painting [three panel], 1951 by Robert Rauschenberg, Image Credit: SFMOMA</figcaption>
