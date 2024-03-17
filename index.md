@@ -1,8 +1,5 @@
 ---
 layout: single
-#classes: wide
-#title: Can AI Create a White Painting?
-#masthead_title: Can AI Create a White Painting?
 author: Cody Z. Nash
 
 header:
@@ -12,11 +9,13 @@ header:
 description: Can AI Create a White Painting?
 show-downloads: False
 
+title: Can AI Create a White Painting?
+
 toc: true
 toc_label: "Table of Contents"
 ---
 
-# Can AI Create a White Painting?
+# First, the Human Art.
 
 <figure>
   <img src="images/White Painting.png" alt="White Painting [three panel]" style="width: 50%;">
