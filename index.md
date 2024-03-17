@@ -6,14 +6,12 @@ header:
   image: images/white.jpg
   caption: white.jpeg by c.z.nash
 
-#description: Can AI Create a White Painting?
+description: Can AI Create a White Painting?
 show-downloads: False
 
 toc: true
 toc_label: "Table of Contents"
 ---
-
-# Can AI Create a White Painting?
 
 <figure>
   <img src="images/White Painting.png" alt="White Painting [three panel]" style="width: 50%;">
