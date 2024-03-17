@@ -1,0 +1,15 @@
+
+name: Cody Nash
+repository: codyznash/white_paintings
+
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+plugins:
+- jekyll-remote-theme
+- jekyll-include-cache
+
+minimal_mistakes_skin: "dark"
+
+atom_feed:
+  hide: true
+
+title: Can AI Create a White Painting?
