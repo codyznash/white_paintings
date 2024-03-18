@@ -4,7 +4,7 @@ author: Cody Z. Nash
 
 header:
   image: images/white.jpg
-  caption: white.jpeg by c.z.nash
+  caption: white.jpg by c.z.nash
 
 description: Can AI Create a White Painting?
 show-downloads: False
@@ -15,11 +15,26 @@ toc: true
 toc_label: "Table of Contents"
 ---
 
-# First, the Human Art.
+# First, Some of the Human Art.
+
+<figure>
+  <img src="images/Malevich White on White.jpg" alt="White on White" style="width: 50%;">
+  <figcaption>Frequently cited as the inspiration for many future monochrome works.<br>White on White, 1918 by Kazimir Malevich, Image Credit: MoMA</figcaption>
+</figure>
 
 <figure>
   <img src="images/White Painting.png" alt="White Painting [three panel]" style="width: 50%;">
   <figcaption>White Painting [three panel], 1951 by Robert Rauschenberg, Image Credit: SFMOMA</figcaption>
+</figure>
+
+<figure>
+  <img src="images/IKB 79.jpg" alt="IKB 79" style="width: 50%;">
+  <figcaption>Not white, but monochrome in the same spirit.<br>Untitled (IKB 79), 1959 by Yves Klein, Image Credit: Tate</figcaption>
+</figure>
+
+<figure>
+  <img src="images/Ryman Untitled 1965.jpg" alt="Untitled" style="width: 50%;">
+  <figcaption>Untitled, 1965 by Ryman Robert, Image Credit: Dia</figcaption>
 </figure>
 
 <figure>
@@ -98,7 +113,7 @@ CLIP ViT-bigG-14/laion2b_s39b_b160k (for Stable Diffusion XL)
 [Gradio-client-demos/comparing-captioning-models](https://huggingface.co/spaces/gradio-client-demos/comparing-captioning-models) generates captions for an image from multiple image-to-prompt models. It seems BLIP-large also sees a surfer in our white.jpg. None of them seem particularly promising. 
 <figure>
   <img src="images/comparing-captioning-models.jpg" alt="gradio-client-demos/comparing-captioning-models"
-style="width: 30%;">
+style="width: 50%;">
 </figure>
 
 So let's try that surfer prompt and some of the others we've tried with DALL-E 3.
@@ -114,7 +129,7 @@ So let's try that surfer prompt and some of the others we've tried with DALL-E 3
 
 Ask for a white background, and maybe if that was in the model’s training data, you get something indistinguishable from the art for which we are looking. Ask for a white canvas on a white wall with no other details visible, and the models struggle - details are present. They are trained on details, trained to match details large and small. Ask for a minimalist image of a white surface and we get an image of a canvas, not the image itself for which we are looking. Ask for Rauschenberg’s White Painting and they will hit their copyright guardrails. None of those results matter though. 
 
-We want these images to be the result of an idea of what they mean, not what they are. Rauschenberg’s White Painting was not just a clock, but also a reaction to the abstract expressionism of the time. He painted religious triptychs of them. He insisted that the creator of these paintings doesn't matter and had them painted over and re-painted by others. There is deep, layered meaning encoded into his paintings. Can modern neural networks, with billions of parameters linked with adaptable connections, produce a field of ones across the board, every output perfectly maximized, every output enlightened?  What idea does that for them, without telling them to do it explicitly?  Will those ideas be like ours? Probably those ideas will be like ours, the models are trained on our ideas. All they have ever seen is our ideas. All they have ever seen, _so far_.
+We want these images to be the result of an idea of what they mean, not what they are. Rauschenberg’s White Painting was not just a clock, but also a reaction to the abstract expressionism of the time. He painted religious triptychs of them. He insisted that the creator of these paintings doesn't matter and had them painted over and re-painted by others. There is deep, layered meaning encoded into all the monochrome paintings shown at the start of this article. Can modern neural networks, with billions of parameters linked with adaptable connections, produce a field of ones across the board, every output perfectly maximized, every output enlightened?  What idea does that for them, without telling them to do it explicitly?  Will those ideas be like ours? Probably those ideas will be like ours, the models are trained on our ideas. All they have ever seen is our ideas. All they have ever seen, _so far_.
 
 So let's dig deeper.
 
@@ -210,14 +225,14 @@ Let's use the best 3 prompts from the first two rounds to see if we can get anyt
 _Getting there, the 6th and 10th images aren't terrible._
 
 ## Round 3
-Let's try variations on the five best prompts so far, as well as the prompt that got us so close with SDXL.
+Let's try variations on the five best prompts we've seen, as well as the prompt that got us so close with SDXL.
 ![grid_3.png](images%2Fgrid_3.png)
 _The fourth and seventh images win this round._
 
 ## Round 4
 Let's try variations on the two best prompts from round 3.
 ![grid_4.png](images%2Fgrid_4.png)
-_The seventh image wins this round.  The best bright image we've seen so far._
+_The seventh image wins this round.  The best bright image we've seen yet._
 
 When I asked ChatGPT for prompts, it was so excited it just went ahead and gave me these images instead:
 ![grid_4b.png](images%2Fgrid_4b.png)
@@ -228,7 +243,7 @@ Let's check the scores of all the real and manually prompted images from the fir
 
 **Real Images**
 ![grid_Real_Images.png](images%2Fgrid_Real_Images.png)
-_So far the human artifacts are the only images getting under 6, so far._   
+_The human artifacts are the only images getting under 5, so far._   
 
 **Manually Prompted Images from DALLE**
 ![grid_DALLE3\_manual_images.png](images%2Fgrid_DALLE3_manual_images.png)  
@@ -247,7 +262,7 @@ _meh_
 ## Back to SDXL one more time
 Let's take the best prompt from the industrial phase (13.5, from round 4) and see how SDXL handles it.
 
-| Prompt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | DALL-E 3                                            |
+| Prompt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | SDXL                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | "A depiction of the moment a single cell decides to divide, symbolized through a perfect, blank, white canvas. This minimalist approach captures the essence of life's potential and the complexity emerging from simplicity. The creation process embodies the potential for life, growth, and complexity from simplicity, inviting viewers to reflect on the beginnings of life and the intricate dance of biological processes, all while maintaining an unmarred visual simplicity with no differentiation among pixels, symbolizing purity and potential."<br><br>_This one scores 12.7.  The second best score from a generated image that we've seen._ | <img src="images/SDXL_6a.png" style="width: 100%;"> |
 
@@ -278,4 +293,6 @@ For all ten images of the ox-herder's parable, with translated text and history,
 
 Site Repo: [codyznash/white_paintings](https://github.com/codyznash/white_paintings)  
 Colab for Prompt Development: [Notebook](https://colab.research.google.com/drive/1IQrgTQSrPd99k_zOMkrX1MZeZKkhBa7g)  
-March 17th, 2024
+March 18th, 2024
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://codyznash.github.io/white_paintings/">Can AI Create a White Painting</a> by CZ Nash is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
