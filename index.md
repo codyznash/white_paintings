@@ -182,7 +182,7 @@ Perhaps with more time it would be useful to try some of the automatic, iterativ
 
 Let's ask ChatGPT for prompts, take the best and add them back and ask for more.  
 
-For a simple measure of how well we are doing, we'll measure the average total absolute difference in RGB values from the mean.  Lower is better, range is 0 to 255.
+For a simple measure of how well we are doing, we'll measure the average absolute difference in RGB values over all channels from the mean.  Lower is better, range is 0 to 255.
 
 If you want to follow along in code, [see this colab notebook](https://colab.research.google.com/drive/1IQrgTQSrPd99k_zOMkrX1MZeZKkhBa7g).  
 
