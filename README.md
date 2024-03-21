@@ -1,1 +1,1 @@
-# white_paintings
+# Repo for [white_paintings](https://codyznash.github.io/white_paintings/) article.
