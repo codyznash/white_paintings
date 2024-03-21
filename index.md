@@ -265,7 +265,7 @@ Still room for improvement.
 The goal was to see if AI could create a white painting.  Not just a pure white image, but something that is the result of some inspiration, idea, or concept.
 
 
-<br><br>
+<br><br><br><br>
 
 ***
 
